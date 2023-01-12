@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <title>test</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<!-- in label -->
+<form>
+    <label>
+        Email
+        <input type="email" name="email" />
+    </label>
+
+    <label>
+        Password
+        <input type="password" name="password" />
+    </label>
+
+    <button type="submit">Submit</button>
+</form>
+<!-- not in label -->
+<br>
+<form>
+    <label for="user_email">Email</label>
+    <input type="email" name="email" id="user_email" />
+
+    <label for="user_password">Password</label>
+    <input type="password" name="password" id="user_password" />
+
+    <button type="submit">Submit</button>
+</form>
+<!-- autofocus -->
+<br>
+<form>
+    <label>
+        Username
+        <input type="text" name="username" autofocus placeholder="Yazikov Vlad" />
+    </label>
+    <label>
+        Email
+        <input type="email" name="email" />
+    </label>
+    <button type="submit">Submit</button>
+</form>
+<!-- radio-button -->
+<br>
+<form>
+    <p>Choose a color:</p>
+    <label>
+        <input type="radio" name="color" value="red" checked />
+        Red
+    </label>
+    <label>
+        <input type="radio" name="color" value="white" />
+        White
+    </label>
+    <label>
+        <input type="radio" name="color" value="green" />
+        Green
+    </label>
+</form>
+<!-- checkbox -->
+<br>
+<form>
+    <p>What are your hobbies?</p>
+    <label>
+        <input type="checkbox" name="hobby" value="music" checked />
+        Music
+    </label>
+    <label>
+        <input type="checkbox" name="hobby" value="sports" checked />
+        Sports
+    </label>
+    <label>
+        <input type="checkbox" name="hobby" value="reading" />
+        Reading
+    </label>
+</form>
+<!-- numbers & steps -->
+<br>
+<label>
+    Weight with 0.1 step value:
+    <input type="number" name="weight" min="0" max="150" step="0.1" value="0" />
+</label>
+
+<label>
+    Height with 0.4 step value:
+    <input type="number" name="height" min="0" max="200" step="0.4" value="0" />
+</label>
+<!-- tel -->
+<br>
+<form>
+    <label>
+        Phone number
+        <input type="tel" name="phone_number" />
+    </label>
+
+    <button type="submit">Submit</button>
+</form>
+<!-- date & time -->
+<br>
+<form>
+    <label>
+        Date
+        <input type="date" min="1920-01-01" max="" />
+    </label>
+
+    <label>
+        Time
+        <input type="time" />
+    </label>
+
+    <label>
+        Date and time
+        <input type="datetime-local" min="1920-01-01T00:00" max="" />
+    </label>
+
+    <button type="submit">Submit</button>
+</form>
+<!-- textarea -->
+<br>
+<form>
+    <label>
+        Email
+        <input type="email" name="email" placeholder="example@mail.com">
+    </label>
+    <label>
+        Feedback
+        <textarea name="feedback" rows="5" placeholder="Type your message here..."></textarea>
+    </label>
+    <button type="submit">Submit</button>
+</form>
+<!-- select -->
+<br>
+<label for="size">Size</label>
+<select id="size" name="size">
+    <option value="xs">Extra Small</option>
+    <option value="s">Small</option>
+    <option value="m" selected>Medium</option>
+    <option value="l">Large</option>
+</select>
+<!-- options group -->
+<br>
+<br>
+<label for="month">Month</label>
+<select name="month" id="month">
+    <optgroup label="Summer">
+        <option value="s6">June</option>
+        <option value="s7">July</option>
+        <option value="s8">August</option>
+    </optgroup>
+
+    <optgroup label="Autumn">
+        <option value="s9">September</option>
+        <option value="s10">October</option>
+        <option value="s11">November</option>
+    </optgroup>
+</select>
+<!-- datalist -->
+<br>
+<br>
+<label for="fav">Choose your favourite browser</label>
+<input list="browsers" name="fav" id="fav" />
+
+<datalist id="browsers">
+    <option>Edge</option>
+    <option>Firefox</option>
+    <option>Chrome</option>
+    <option>Opera</option>
+    <option>Safari</option>
+</datalist>
+<br>
+<br>
+<label for="state">Choose your state</label>
+<input type="text" name="state" id="state" list="states" />
+<datalist id="states">
+    <option value="AL">Alabama</option>
+    <option value="AK">Alaska</option>
+    <option value="AZ">Arizona</option>
+    <option value="AR">Arkansas</option>
+</datalist>
+
+<!-- <fieldset> и <legend> -->
+<br>
+<form>
+    <fieldset>
+        <legend>Enter your contact details</legend>
+        <label>
+            Name
+            <input type="text" name="username" />
+        </label>
+        <label>
+            Email
+            <input type="email" name="email" />
+        </label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Your favourite programming language</legend>
+        <label>
+            <input type="checkbox" name="language" value="python">
+            Python
+        </label>
+        <label>
+            <input type="checkbox" name="language" value="js">
+            JavaScript
+        </label>
+        <label>
+            <input type="checkbox" name="language" value="ruby">
+            Ruby
+        </label>
+    </fieldset>
+
+    <fieldset>
+        <legend>I want to receive</legend>
+        <label>
+            <input type="checkbox" name="newsletter" value="weekly">
+            The weekly newsletter
+        </label>
+        <label>
+            <input type="checkbox" name="newsletter" value="company_offers">
+            Offers from the company
+        </label>
+        <label>
+            <input type="checkbox" name="newsletter" value="associated_offers">
+            Offers from associated companies
+        </label>
+    </fieldset>
+
+    <button type="submit">Subscribe</button>
+</form>
+<br>
+<form class="form">
+    <div class="form-group" role="group" aria-labelledby="contact-details-head">
+        <p id="contact-details-head">Enter your contact details</p>
+        <label>
+            Name
+            <input type="text" name="username" />
+        </label>
+        <label>
+            Email
+            <input type="email" name="email" />
+        </label>
+    </div>
+
+    <div class="form-group" role="group" aria-labelledby="language-head">
+        <p id="language-head">Your favourite programming language</p>
+        <label>
+            <input type="checkbox" name="language" value="python">
+            Python
+        </label>
+        <label>
+            <input type="checkbox" name="language" value="js">
+            JavaScript
+        </label>
+        <label>
+            <input type="checkbox" name="language" value="ruby">
+            Ruby
+        </label>
+    </div>
+
+    <div class="form-group" role="group" aria-labelledby="newsletter-head">
+        <p id="newsletter-head">I want to receive</p>
+        <label>
+            <input type="checkbox" name="newsletter" value="weekly">
+            The weekly newsletter
+        </label>
+        <label>
+            <input type="checkbox" name="newsletter" value="company_offers">
+            Offers from the company
+        </label>
+        <label>
+            <input type="checkbox" name="newsletter" value="associated_offers">
+            Offers from associated companies
+        </label>
+    </div>
+
+    <button type="submit">Subscribe</button>
+</form>
+<!-- validation -->
+<br>
+<form>
+    <label>
+        Email
+        <input type="email" name="email" required />
+    </label>
+    <label>
+        Password
+        <input type="password" name="password" required />
+    </label>
+
+    <button type="submit">Submit</button>
+</form>
+<!-- patterns -->
+<br>
+<form>
+    <label>
+        Username
+        <input type="text" name="text" required pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+            title="Username must be two words separated by space." />
+    </label>
+    <label>
+        Password
+        <input type="password" name="password" required minlength="6" maxlength="12"
+            pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+            title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number." />
+    </label>
+    <button type="submit">Submit</button>
+</form>
+
+<br>
+<p>forma</p>
+
+<form class="form">
+    <b class="modal-header">Leave your contact and we will call you back</b>
+    <div class="field_group">
+        <div class="form_field">
+            <label for="name" class="form_label">Name</label>
+            <input type="text" id="name" name="User_name" class="form_input">
+        </div>
+        <div class="form_field">
+            <label for="tel" class="form_label">Phone</label>
+            <input type="tel" id="tel" name="User_phone" class="form_input">
+        </div>
+        <div class="form_field">
+            <label for="email" class="form_label">Email</label>
+            <input type="email" id="email" name="User_email" class="form_input">
+        </div>
+        <div class="form_field">
+            <label for="textarea" class="form_label">Comment</label>
+            <textarea name="Comment" id="textarea" cols="" rows="" placeholder="Input text"
+                class="form_comment"></textarea>
+        </div>
+    </div>
+    <button type="submit">Send</button>
+</form>
