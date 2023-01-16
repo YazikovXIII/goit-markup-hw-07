@@ -66,7 +66,18 @@ img {
 	margin-right: auto;
 	background-color: #31d0aa;
 }
-
+@media screen and (min-width:480px) {
+	.container {
+		min-width: 428px;
+	}
+	
+}
+@media screen and (min-width:768px) {
+	.container {
+		min-width: 768px;
+	}
+	
+}
 @media screen and (min-width:1200px) {
 	.container {
 		min-width: 1158px;
@@ -114,6 +125,12 @@ img {
 
 .navigation-list {
 	display: none;
+}
+@media screen and (min-width:768px) {
+	.navigation-list {
+		display: flex;
+	}
+	
 }
 
 @media screen and (min-width:1200px) {
@@ -179,20 +196,27 @@ img {
 	color: var(--iris);
 }
 
+@media screen and (min-width:768px) {
+	.navinline {
+		margin: auto;
+	}
+}
+@media screen and (min-width:1200px) {
+	.navinline {
+		margin-left: 0;
+	}
+}
 /* adress */
 
 .adress-list {
 	display: none;
 
 }
-
 @media screen and (min-width:1200px) {
-	.adress-list {
-		display: flex;
-		margin-left: auto;
-
-	}
+	adr
+	
 }
+
 
 .adress-link {
 	color: var(--navy-blue);
@@ -202,17 +226,61 @@ img {
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+@media screen and (min-width:768px) {
+	.adress-link {
+		padding: 0;
+		font-size: 12px;
+		line-height: 1.14;
+		letter-spacing: 00.04em;
+	}
+}
+@media screen and (min-width:1200px) {
+	.adress-link {
+			color: var(--navy-blue);
+			font-size: 16px;
+			padding-top: 24px;
+			padding-bottom: 24px;
+			display: block;
+			transition-duration: 250ms;
+			transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+		}
+}
 .adress-list-item:not(:last-child) {
-	margin-left: 331px;
 	margin-right: 40px;
+}
+@media screen and (min-width:768px) {
+	.adress-list-item:not(:last-child){
+		margin-right: 0;
+		padding-bottom: 4px;
+	}
+}
+@media screen and (min-width:1200px) {
+	.adress-list-item:not(:last-child) {
+			margin-right: 40px;
+		}
 }
 
 .adress-link :hover,
 .adress-link :focus {
 	color: var(--order-button-normal);
 }
+@media screen and (min-width:768px) {
+	.adress-list {
+		display: block;
+		margin-left: auto;
+		margin-top: 24px;
+	}
 
+}
+
+@media screen and (min-width:1200px) {
+	.adress-list {
+		display: flex;
+		margin-left: auto;
+		margin-top: 0;
+		align-items: center;
+	}
+}
 /* hero */
 
 .studio-hero .container {
