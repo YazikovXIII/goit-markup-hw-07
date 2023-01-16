@@ -811,9 +811,8 @@ img {
 }
 
 @media screen and (min-width:1200px) {
-	.our-team {
-		padding-top: 120px;
-		padding-bottom: 120px;
+	.team__container {
+		padding: 120px 16px;
 	}
 }
 
@@ -845,9 +844,9 @@ img {
 	.team-list {
 		display: flex;
 		flex-direction: row;
-
 	}
 }
+
 
 .team-member:not(:last-child) {
 	margin-bottom: 72px;
@@ -869,7 +868,7 @@ img {
 	}
 
 	.team-member:not(:last-child) {
-		margin-right: 24px;
+		margin-right: 0;
 	}
 }
 
