@@ -95,7 +95,7 @@ img {
 }
 
 .logo {
-	margin: 24px 77px 24px 0;
+	margin: 24px auto 24px 0;
 }
 
 
@@ -290,6 +290,131 @@ img {
 		margin-top: 0;
 		align-items: center;
 	}
+}
+
+.button-header-open {
+	align-self: center;
+	border: none;
+	background-color: transparent;
+	/* outline: 1px solid salmon; */
+	margin: 0;
+	padding: 0;
+	width: 32px;
+	height: 24px;
+	stroke: var(--navy-blue);
+}
+
+.burger_icon {
+	width: 32px;
+	height: 24px;
+}
+
+@media screen and (min-width:768px) {
+	.button-header-open {
+		display: none;
+	}
+}
+
+/* mobile menu */
+.mobile-menu {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: #FFFFFF;
+	box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+	top: 0;
+	left: 0;
+	z-index: 10;
+	overflow: auto;
+
+
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+	transition: opacity 500ms linear, visibility 500ms linear;
+}
+
+.mobile-menu.is-open {
+	display: block;
+	opacity: 1;
+	visibility: visible;
+	pointer-events: auto;
+}
+
+.mobile-menu-container {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-top: 80px;
+	padding-bottom: 40px;
+	height: 100%;
+}
+
+.close-button-burger {
+	position: absolute;
+	top: 40px;
+	right: 40px;
+	display: flex;
+	height: 24px;
+	width: 24px;
+	padding: 0;
+	margin: 0;
+	border-radius: 50%;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	fill: var(--navy-blue);
+	justify-content: center;
+	align-items: center;
+	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+.mobile-menu-closer {
+	width: 8px;
+	height: 8px;
+}
+
+.mobile-nav {
+	margin-bottom: auto;
+}
+
+.mobile-nav-link {
+	color: var(--navy-blue);
+	font-size: 36px;
+	font-weight: 700;
+	line-height: calc(40/36);
+	letter-spacing: 0.02em;
+}
+
+.active {
+	color: var(--iris);
+}
+
+.mobile-nav-list-item:not(:last-child) {
+	margin-bottom: 40px;
+}
+
+.mobile-adress-link-tel {
+	font-size: 36px;
+	font-weight: 700;
+	line-height: calc(40/36);
+	color: var(--iris);
+}
+
+.mobile-adress-link {
+	font-size: 20px;
+	font-weight: 500;
+	line-height: calc(24/20);
+	color: var(--navy-blue);
+	letter-spacing: 0.02em;
+}
+
+.mobile-adress-list-item:not(:last-child) {
+	margin-bottom: 40px;
+}
+
+.mobile-adress {
+	margin-bottom: 48px;
 }
 
 /* hero */
