@@ -56,17 +56,23 @@
                 </li>
 
             </ul>
-
-            <button type="button" class="button-header-open js-open-menu">
+            <!-- <button class="button-header-open menu-toggle js-open-menu" aria-expanded="false"
+                aria-controls="mobile-menu">
+                <svg class="burger_icon">
+                    <use href="./img/upd_symbol.svg#icon_burger"></use>
+                </svg>
+            </button> -->
+            <button type="button" class="button-header-open menu-toggle js-open-menu" aria-expanded="false"
+                aria-controls="mobile-menu">
                 <svg class="burger_icon">
                     <use href="./img/upd_symbol.svg#icon_burger"></use>
                 </svg>
             </button>
         </div>
 
-        <div class="mobile-menu js-menu-container">
-            <div class="mobile-menu-container">
-                <button type="button" class="close-button-burger js-close-menu">
+        <div class="mobile-menu js-menu-container" id="mobile-menu">
+            <div class="menu-container">
+                <button type="button" class="close-button-burger menu-toggle js-close-menu">
                     <svg class="mobile-menu-closer">
                         <use href="./img/upd_symbol.svg#icon_cross"></use>
                     </svg>
@@ -100,19 +106,19 @@
                 </div>
                 <div class="mobile-social-media">
                     <ul class="list team-sm-list">
-                        <li class="team-sm-list-item"><a href="#" class="team-sm-link"><svg class="team-link-icon">
+                        <li class="team-sm-list-item"><a href="#" class="team-sm-link"><svg class="mob-sm-link-icon">
                                     <use href="./img/symbol_svg.svg#icon_instagram"></use>
                                 </svg></a>
                         </li>
-                        <li class="team-sm-list-item"><a href="#" class="team-sm-link"><svg class="team-link-icon">
+                        <li class="team-sm-list-item"><a href="#" class="team-sm-link"><svg class="mob-sm-link-icon">
                                     <use href="./img/symbol_svg.svg#icon_twitter"></use>
                                 </svg></a>
                         </li>
-                        <li class="team-sm-list-item"><a href="#" class="team-sm-link"><svg class="team-link-icon">
+                        <li class="team-sm-list-item"><a href="#" class="team-sm-link"><svg class="mob-sm-link-icon">
                                     <use href="./img/symbol_svg.svg#icon_facebook"></use>
                                 </svg></a>
                         </li>
-                        <li class="team-sm-list-item"><a href="#" class="team-sm-link"><svg class="team-link-icon">
+                        <li class="team-sm-list-item"><a href="#" class="team-sm-link"><svg class="mob-sm-link-icon">
                                     <use href="./img/symbol_svg.svg#icon_linkedin"></use>
                                 </svg></a>
                         </li>
@@ -121,7 +127,6 @@
             </div>
         </div>
 
-        </div>
 
 
     </header>
@@ -183,12 +188,14 @@
                                 <textarea name="Comment" id="textarea" placeholder="Input text"
                                     class="form_comment"></textarea>
                             </div>
-                            <div class="form_field_check">
-                                <input type="checkbox" name="agreement" value="" id="agreement" class="check__input">
-                                <span class="check__box"></span>
-                                <label for="agreement" class="policy_label">I accept
-                                    the terms and conditions of the <a href="#">Privacy Policy</a></label>
-                            </div>
+
+                            <label class="check-box-label">
+                                <input class="checkbox" type="checkbox" name="checkbox">
+                                <span class="icon-checkbox"></span>
+                                <p class="text-checkbox">I accept the terms and conditions of the <a
+                                        class="link-chechbox" href="#">Privacy
+                                        Policy</a></p>
+                            </label>
                         </div>
                         <button type="submit" class="send__btn">Send</button>
                     </form>
@@ -263,13 +270,16 @@
                 <h3 class="what-text">What are we doing?</h3>
                 <ul class="list what-list">
                     <li class="what-list-item">
-                        <img src="./img/image_1.jpg" alt="PC app" width="360">
+                        <img srcset="./img/pic/what/what_1@1x.jpg 1x, ./img/pic/what/what_1@2x.jpg 2x"
+                            src="./img/pic/what/what_1@1x.jpg" alt="PC app" width="360">
                     </li>
                     <li class="what-list-item">
-                        <img src="./img/image_2.jpg" alt="Mobile app" width="360">
+                        <img srcset="./img/pic/what/what_2@1x.jpg 1x,./img/pic/what/what_2@2x.jpg 2x"
+                            src="./img/pic/what/what_2@1x.jpg" alt="Mobile app" width="360">
                     </li>
                     <li class="what-list-item">
-                        <img src="./img/image_3.jpg" alt="Crossplatform app" width="360">
+                        <img srcset="./img/pic/what/what_3@1x.jpg 1x,./img/pic/what/what_3@2x.jpg 2x"
+                            src="./img/pic/what/what_3@1x.jpg" alt="Crossplatform app" width="360">
                     </li>
                 </ul>
             </div>
@@ -281,7 +291,8 @@
                 <h2 class="our-team-text">Our Team</h2>
                 <ul class="list team-list">
                     <li class="team-member">
-                        <img src="./img/Mark_photo.jpg" alt="Photo of Mark Guerrero" width="264">
+                        <img srcset="./img/pic/team/team_1@1x.jpg 1x,./img/pic/team/team_1@2x.jpg 2x"
+                            src="./img/pic/team/team_1@1x.jpg" alt="Photo of Mark Guerrero" width="264">
                         <div class="team-content">
                             <h3 class="member__name">Mark Guerrero</h3>
                             <p class="member__position">Product Designer</p>
@@ -312,7 +323,8 @@
                         </div>
                     </li>
                     <li class="team-member">
-                        <img src="./img/Tom_photo.jpg" alt="Photo of Tom Ford" width="264">
+                        <img srcset="./img/pic/team/team_2@1x.jpg 1x,./img/pic/team/team_2@2x.jpg 2x"
+                            src="./img/pic/team/team_2@1x.jpg" alt="Photo of Tom Ford" width="264">
                         <div class="team-content">
                             <h3 class="member__name">Tom Ford</h3>
                             <p class="member__position">Frontend Developer</p>
@@ -341,7 +353,8 @@
                         </div>
                     </li>
                     <li class="team-member">
-                        <img src="./img/Camilia_photo.jpg" alt="Photo of Camila Garcia" width="264">
+                        <img srcset="./img/pic/team/team_3@1x.jpg 1x,./img/pic/team/team_3@2x.jpg 2x"
+                            src="./img/pic/team/team_3@1x.jpg" alt="Photo of Camila Garcia" width="264">
                         <div class="team-content">
                             <h3 class="member__name">Camila Garcia</h3>
                             <p class="member__position">Marketing</p>
@@ -369,7 +382,8 @@
                         </div>
                     </li>
                     <li class="team-member">
-                        <img src="./img/Daniel_photo.jpg" alt="Photo of Daniel Wilson" width="264">
+                        <img srcset="./img/pic/team/team_4@1x.jpg 1x,./img/pic/team/team_4@2x.jpg 2x"
+                            src="./img/pic/team/team_4@1x.jpg" alt="Photo of Daniel Wilson" width="264">
                         <div class="team-content">
                             <h3 class="member__name">Daniel Wilson</h3>
                             <p class="member__position">UI Designer</p>
